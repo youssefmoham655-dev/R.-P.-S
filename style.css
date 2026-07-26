@@ -40,3 +40,13 @@ html{
     object-fit: contain;
     cursor:pointer;
 }
+.ai-de{
+    background-color:grey;
+    width:600px;
+    height:250px;
+    margin: 20px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

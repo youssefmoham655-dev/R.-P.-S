@@ -11,19 +11,25 @@
         <h1>Rock, paper, scissors</h1>
         <h4>play againist computer</h4>
         <div class="game">
-            <div class="ai-de"></div>
+            <div class="ai-de">
+                <div class="te"></div>
+                <div class="battle">
+                    <img id="computer-img" src="assets/rock.png">
+                    <span>VS</span>
+                    <img id="user-img" src="">
+                </div>
+            </div>
 <!-- play section -->
             <div class="play">
                 <div class="choose-option">
                     <h4>pick one</h4>
                 </div>
                 <div class="choose-images">
-                    <img src="assets/Paper.png">
-                    <img src="assets/rock.png">
-                    <img src="assets/Scissors.png">
+                    <img src="assets/Paper.png" id="paper" onclick="choose('paper')">
+                    <img src="assets/rock.png" id="rock" onclick="choose('rock')">
+                    <img src="assets/Scissors.png" id="scissors" onclick="choose('scissors')">
                 </div>
             </div>
-        </div>
         </div>
     </div>
     <script src="main.js"></script>
