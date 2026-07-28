@@ -49,4 +49,22 @@ html{
     display:flex;
     align-items:center;
     justify-content:center;
+    flex-direction:column;
+}
+.battle{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display:flex;
+    align-content:space-between;
+    gap:100px;
+    padding:0;
+    margin:0;
+    justify-content:center;
+    align-items:center;
+}
+.battle img{
+    width:100px;
+    height:100px;
+    object-fit: contain;
 }
