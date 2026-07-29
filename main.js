@@ -13,4 +13,61 @@ function choose(userpick) {
     else if (userpick === 'scissors') {
         userimg.src = 'assets/Scissors.png';
     }
-}
+// disable
+    const paper = document.getElementById("paper");
+    const rock = document.getElementById("rock");
+    const scissors = document.getElementById("scissors");
+
+// condtion el wara2a 
+
+    if (userpick === 'paper') {
+        rock.style.pointerEvents = 'none';
+        rock.style.opacity = '0.5';
+
+        scissors.style.pointerEvents = 'none';
+        scissors.style.opacity = '0.5';
+
+        setTimeout(function() {
+            rock.style.pointerEvents = 'auto';
+            rock.style.opacity = '1';
+
+            scissors.style.pointerEvents = 'auto';
+            scissors.style.opacity = '1';
+        }, 3000);
+    }
+
+// condtion el toba 
+        if (userpick === 'rock') {
+        paper.style.pointerEvents = 'none';
+        paper.style.opacity = '0.5';
+
+        scissors.style.pointerEvents = 'none';
+        scissors.style.opacity = '0.5';
+
+        setTimeout(function() {
+            paper.style.pointerEvents = 'auto';
+            paper.style.opacity = '1';
+
+            scissors.style.pointerEvents = 'auto';
+            scissors.style.opacity = '1';
+        }, 3000);
+    }
+
+// condtion el ma2as
+
+        if (userpick === 'scissors') {
+        rock.style.pointerEvents = 'none';
+        rock.style.opacity = '0.5';
+
+        paper.style.pointerEvents = 'none';
+        paper.style.opacity = '0.5';
+
+        setTimeout(function() {
+            rock.style.pointerEvents = 'auto';
+            rock.style.opacity = '1';
+
+            paper.style.pointerEvents = 'auto';
+            paper.style.opacity = '1';
+        }, 3000);
+    }
+    }
