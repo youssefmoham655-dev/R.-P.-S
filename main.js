@@ -1,3 +1,26 @@
+let userScore = 0;
+let computerScore = 0;
+function updateScore(){
+    const userscorenumber = document.getElementById('user-score');
+    const computerscorenumber = document.getElementById('computer-score');
+
+    userscorenumber.textContent = userScore;
+    computerscorenumber.textContent = computerScore;
+}
+function reset(){
+    const letsStartText = document.getElementById('lets-start');
+    const aide = document.getElementById("ai-de");
+    const game = document.getElementById("game");
+    userScore = 0;
+    computerScore = 0;
+
+    updateScore();
+
+    aide.style.backgroundColor = 'grey';
+    game.style.backgroundColor = 'rgb(128, 128, 128, 0.4)';
+
+    letsStartText.textContent = "Let's start";
+}
 function determine (user, computer) {
     const letsStartText = document.getElementById('lets-start');
     const aide = document.getElementById("ai-de");
@@ -15,11 +38,17 @@ function determine (user, computer) {
         letsStartText.textContent = "You won";
         aide.style.backgroundColor = 'green';
         game.style.backgroundColor = 'rgb(0, 128, 0, 0.4)';
+
+        userScore++;
+        updateScore();
     }
     else {
         letsStartText.textContent = "You lost";
         aide.style.backgroundColor = 'red';
         game.style.backgroundColor = 'rgb(128, 0, 0, 0.4)';
+
+        computerScore++;
+        updateScore();
     }
 }
 function choose(userpick) {

@@ -15,9 +15,10 @@ html{
     align-items:center;
     flex-direction:column;
     width:800px;
-    height:500px;
+    height:600px;
     background-color:rgb(128, 128, 128, 0.4);
     border-radius:10px;
+    padding:0;
 }
 .play{
     display: flex;
@@ -67,4 +68,8 @@ html{
     width:100px;
     height:100px;
     object-fit: contain;
+}
+#reset{
+    margin:10px;
+    font-family:'Courier New', Courier, monospace;
 }
