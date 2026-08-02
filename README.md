@@ -1,6 +1,6 @@
 ## Rock, paper, and scissors
 
-[![Built for Hack Club Horizons](https://img.shields.io/badge/Built%20for-Hack%20Club%20Horizons-blue?style=for-the-badge)](https://horizons.hackclub.com/)
+[![Built for Hack Club Macondo](https://img.shields.io/badge/Built%20for-Hack%20Club%20Macondo-blue?style=for-the-badge)](https://macondo.hackclub.com) 
 
 That game that we all played when we were child(I am still playing it till now(I am 15)):
 - Rock beats scissors
